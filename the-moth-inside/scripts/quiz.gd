@@ -3,12 +3,12 @@ var questions = []
 var current_question = 0
 var traits = {} #player earned traits for fnl mothhhh
 
-@onready var question_label = $VBoxContainer/Label
+@onready var question_label = $CenterContainer/VBoxContainer/Question
 @onready var answer_buttons = [
-	$VBoxContainer/Answer1,
-	$VBoxContainer/Answer2,
-	$VBoxContainer/Answer3,
-	$VBoxContainer/Answer4
+	$CenterContainer/VBoxContainer/Answer1,
+	$CenterContainer/VBoxContainer/Answer2,
+	$CenterContainer/VBoxContainer/Answer3,
+	$CenterContainer/VBoxContainer/Answer4
 ]
 func _ready():
 	load_questions()
