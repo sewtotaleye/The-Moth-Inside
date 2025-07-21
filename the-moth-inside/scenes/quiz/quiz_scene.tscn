@@ -1,33 +1,28 @@
-[gd_scene format=3 uid="uid://cwdmrbq44isnx"]
+[gd_scene load_steps=2 format=3 uid="uid://cwdmrbq44isnx"]
+
+[ext_resource type="Script" uid="uid://8l7ilyiqu3jg" path="res://scripts/quiz.gd" id="1_llmhn"]
 
 [node name="QuizScene" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_llmhn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Question" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Button"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="Answer1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Button/Button"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="Answer2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer/Button/Button/Button"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="Answer3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/Button/Button/Button/Button"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="Answer4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
