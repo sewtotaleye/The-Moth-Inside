@@ -2,10 +2,55 @@
   {
 	"question": "When you are overwhelmed,you seek...",
 	"answers": [
-	  { "text": "Light", "traits": ["glow", "bright_palette"] },
-	  { "text": "Shelter", "traits": ["round_wings", "neutral_palette"] },
-	  { "text": "Stillness", "traits": ["no_glow", "monochrome"] },
-	  { "text": "Connection", "traits": ["soft_pattern", "warm_palette"] }
+	  { "text": "More Lighting", "traits": ["glow", "bright_palette"] },
+	  { "text": "Focus", "traits": ["sharp_wings", "neutral_palette"] },
+	  { "text": "Silence", "traits": ["no_glow", "cool_palette"] },
+	  { "text": "Connection", "traits": ["round_wings", "warm_palette"] }
+	]
+  },
+{
+	"question": "What is success?",
+	"answers": [
+	  { "text": "Money", "traits": ["cool_palette"] },
+	  { "text": "Power", "traits": ["neutral_palette"] },
+	  { "text": "Happiness", "traits": ["fuzzy", "warm_palette"] },
+	  { "text": "Success is subjective", "traits": ["round_wings", "bright_palette"] }
+	]
+  },
+{
+	"question": "What grounds you?",
+	"answers": [
+	  { "text": "Routine", "traits": ["smooth_egdes"] },
+	  { "text": "Chaos", "traits": ["jagged_egdes"] },
+	  { "text": "Work", "traits": ["red_tattoo"] },
+	  { "text": "Nature", "traits": ["earth_palette", "floral"] }
+	]
+  },
+{
+	"question": "Which one feels like you?",
+	"answers": [
+	  { "text": "A moth circling a porch light", "traits": ["glow", "chaotic_pattern"] },
+	  { "text": "A petal fallen in the rain", "traits": ["frayed_edges", "pastel_palette"] },
+	  { "text": "An unopened envelope", "traits": ["monochrome"] },
+	  { "text": "A machine in the system", "traits": ["cool_palette", "torn_wing"] }
+	]
+  },
+{
+	"question": "What kind of light draws you in?",
+	"answers": [
+	  { "text": "A soft candle", "traits": ["warm_palette"] },
+	  { "text": "A string of fairy lights", "traits": ["pastel_palette"] },
+	  { "text": "The moon at its brightest", "traits": ["cool_palette"] },
+	  { "text": "The golden hour", "traits": ["blush_palette"] }
+	]
+  },
+{
+	"question": "What kind of beauty speaks to you?",
+	"answers": [
+	  { "text": "Worn-in, familiar things", "traits": ["soft_pattern", "frayed_edges"] },
+	  { "text": "Unexpected color combinations", "traits": ["bold_pattern", "bright_palette"] },
+	  { "text": "Perfect symmetry", "traits": ["cool_palette"] },
+	  { "text": "Little imperfections", "traits": ["neutral_palette", "torn_wing"] }
 	]
   }
 ]
