@@ -1,0 +1,11 @@
+[
+  {
+	"question": "When you are overwhelmed,you seek...",
+	"answers": [
+	  { "text": "Light", "traits": ["glow", "bright_palette"] },
+	  { "text": "Shelter", "traits": ["round_wings", "neutral_palette"] },
+	  { "text": "Stillness", "traits": ["no_glow", "monochrome"] },
+	  { "text": "Connection", "traits": ["soft_pattern", "warm_palette"] }
+	]
+  }
+]
