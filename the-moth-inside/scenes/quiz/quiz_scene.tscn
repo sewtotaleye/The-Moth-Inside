@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cwdmrbq44isnx"]
+
+[node name="QuizScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Button"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Button/Button"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button" type="Button" parent="VBoxContainer/Button/Button/Button"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Label" type="Label" parent="VBoxContainer/Button/Button/Button/Button"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
