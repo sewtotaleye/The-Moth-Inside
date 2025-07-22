@@ -1,37 +1,58 @@
 extends Control
 
-var collected_traits = {}
+@onready var name_label = $CenterContainer/VBoxContainer/name_label
+@onready var blurb_label = $CenterContainer/VBoxContainer/blurb_label
+@onready var moth_image = $CenterContainer/VBoxContainer/moth_image
+@onready var trait_list = $CenterContainer/VBoxContainer/trait_list
+@onready var restart_button = $CenterContainer/VBoxContainer/restart_button
 
-@onready var name_label = $VBoxContainer/Label
-@onready var moth_image = $VBoxContainer/TextureRect
-@onready var blurb_label = $VBoxContainer/Label2
-@onready var restart_button = $VBoxContainer/Button
+var traits_to_display := {}
 
 func _ready():
-    restart_button.text = "Try Again"
-    restart_button.connect("pressed", Callable(self, "_on_restart_pressed"))
+    restart_button.pressed.connect(_on_restart_pressed)
+    
+   
+    await get_tree().process_frame
 
-func set_traits(traits: Dictionary) -> void:
-    # You can update this logic later to display results
-    print("Collected traits:", traits)
+    if traits_to_display.size() > 0:
+        display_traits()
 
-func display_result():
-    # 1. Pick a name based on traits
-    name_label.text = generate_name()
 
-    # 2. Pick an image (TEMP: placeholder moth)
-    moth_image.texture = preload("res://assets/moth_parts/sample_moth.png")
+func set_traits(collected_traits: Dictionary) -> void:
+    traits_to_display = collected_traits
 
-    # 3. Poetic blurb
-    blurb_label.text = generate_blurb()
+func display_traits() -> void:
+    print("Received traits:", traits_to_display)
 
-func generate_name():
-    # Very simple placeholder name logic
-    var words = ["Lantern", "Whisper", "Veil", "Dust", "Flicker"]
-    return "The " + words[randi() % words.size()] + " Moth"
+   
+    var trait_text := ""
+    for t in traits_to_display.keys():
+        trait_text += "• %s\n" % t
+    trait_list.text = trait_text.strip_edges()
 
-func generate_blurb():
-    return "You move gently through the world, shaped by what you hold close."
+   
+    name_label.text = generate_name(traits_to_display)
+    blurb_label.text = generate_blurb(traits_to_display)
+
+func generate_name(traits: Dictionary) -> String:
+    if traits.has("glow") and traits.has("bright_palette"):
+        return "Sunwing"
+    elif traits.has("frayed_edges") and traits.has("pastel_palette"):
+        return "Paperflor"
+    elif traits.has("neutral_palette"):
+        return "Neuluna"
+    else:
+        return "Unnamed Moth"
+
+func generate_blurb(traits: Dictionary) -> String:
+    if traits.has("fuzzy"):
+        return "This moth spends long days flying higher than average. It is said that it wishes to be a bird."
+    elif traits.has("torn_wing"):
+        return "Even damaged wings can carry great strength. This one proves it."
+    elif traits.has("bold_pattern"):
+        return "This moth finds strengh in a bold world. It is said it gets bolder with age."
+    else:
+        return "A mysterious presence, fluttering between what is seen and unseen."
 
 func _on_restart_pressed():
-    get_tree().reload_current_scene()  # Quick and dirty restart for jam
+    get_tree().reload_current_scene()

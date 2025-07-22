@@ -58,4 +58,4 @@ func show_result():
     if parent.has_method("load_result"):
         parent.load_result(collected_traits)
     else:
-        print("❌ parent is null or missing load_result()")
+        print(" parent is null or missing load_result()")
