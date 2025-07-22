@@ -1,4 +1,6 @@
-extends Node
+extends Control
+
+var main_ref = null 
 
 var questions = []
 var current_question = 0
@@ -21,33 +23,39 @@ func load_questions():
     if file:
         var content = file.get_as_text()
         questions = JSON.parse_string(content)
-        
+
 func display_question():
     var q = questions[current_question]
     question_label.text = q["question"]
-    
+
     for i in range(answer_buttons.size()):
         var answer = q["answers"][i]
         answer_buttons[i].text = answer["text"]
-        answer_buttons[i].connect("pressed", Callable(self, "_on_answer_pressed").bind(i))
+        var callable = Callable(self, "_on_answer_pressed").bind(i)
+        if answer_buttons[i].is_connected("pressed", callable):
+         answer_buttons[i].disconnect("pressed", callable)
+        answer_buttons[i].connect("pressed", callable)
 
 func _on_answer_pressed(answer_index):
-    var selected = questions[current_question]["answers"][answer_index]
-    
+    var current_answers = questions[current_question]["answers"]
+    if answer_index >= current_answers.size():
+        print("Invalid answer index:", answer_index)
+        return
+
+    var selected = current_answers[answer_index]
     for t in selected["traits"]:
-        if !collected_traits.has(t):
-            collected_traits[t] = 1
-        else:
-            collected_traits[t] += 1
-            
+        collected_traits[t] = collected_traits.get(t, 0) + 1
+
     current_question += 1
-    
+
     if current_question < questions.size():
         display_question()
     else:
         show_result()
 
 func show_result():
-    var main = get_tree().get_root().get_node("main")
-    main.load_result(collected_traits)
-            
+    var parent = get_parent()
+    if parent.has_method("load_result"):
+        parent.load_result(collected_traits)
+    else:
+        print("❌ parent is null or missing load_result()")

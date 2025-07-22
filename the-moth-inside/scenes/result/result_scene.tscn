@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://7osaj5fvab7w"]
+[gd_scene load_steps=2 format=3 uid="uid://7osaj5fvab7w"]
 
-[node name="ResultScene" type="Node"]
+[ext_resource type="Script" uid="uid://c4ljpwbal8e4j" path="res://scripts/result.gd" id="1_6arnk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6arnk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2

@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://cc2ulskcacd01"]
+[gd_scene load_steps=2 format=3 uid="uid://cc2ulskcacd01"]
+
+[ext_resource type="Script" uid="uid://c5rp7eewtay7p" path="res://scripts/main.gd" id="1_ig7tw"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_ig7tw")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
