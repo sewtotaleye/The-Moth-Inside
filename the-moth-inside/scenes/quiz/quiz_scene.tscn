@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwdmrbq44isnx"]
+[gd_scene load_steps=5 format=3 uid="uid://cwdmrbq44isnx"]
 
 [ext_resource type="Script" uid="uid://8l7ilyiqu3jg" path="res://scripts/quiz.gd" id="1_llmhn"]
 [ext_resource type="Texture2D" uid="uid://dc4yb44jqxel7" path="res://assets/backgrounds/main_background.png" id="2_wnkpi"]
+[ext_resource type="FontFile" uid="uid://cgnwyre2m2guf" path="res://assets/ui/WinkyRough-Bold.ttf" id="3_irn64"]
 [ext_resource type="Theme" uid="uid://2u73dho8wklv" path="res://assets/ui/pixel_ui_theme.tres" id="3_wj6wd"]
 
 [node name="QuizScene" type="Control"]
@@ -37,6 +38,9 @@ layout_mode = 2
 [node name="Question" type="Label" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(280, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.30133, 0.0397188, 0, 1)
+theme_override_fonts/font = ExtResource("3_irn64")
+theme_override_font_sizes/font_size = 23
 text = "What do you seek?"
 horizontal_alignment = 1
 autowrap_mode = 1

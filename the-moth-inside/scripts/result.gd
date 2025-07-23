@@ -1,7 +1,7 @@
 extends Control
 
-@onready var name_label = $CenterContainer/VBoxContainer/name_label
-@onready var blurb_label = $CenterContainer/VBoxContainer/blurb_label
+@onready var name_label = $CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer/name_label
+@onready var blurb_label = $CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer/blurb_label
 @onready var moth_image = $CenterContainer/VBoxContainer/moth_image
 @onready var trait_list = $CenterContainer/VBoxContainer/trait_list
 @onready var restart_button = $CenterContainer/VBoxContainer/restart_button
@@ -35,8 +35,8 @@ func display_traits() -> void:
 	blurb_label.text = generate_blurb(traits_to_display)
 
 func generate_name(traits: Dictionary) -> String:
-	if traits.has("glow") and traits.has("bright_palette"):
-		return "Sunwing"
+	if traits.has("glow") and traits.has("bright_palette") and traits.has("fuzzy"):
+		return "Luna Moth"
 	elif traits.has("frayed_edges") and traits.has("pastel_palette"):
 		return "Paperflor"
 	elif traits.has("neutral_palette"):
@@ -45,8 +45,8 @@ func generate_name(traits: Dictionary) -> String:
 		return "Unnamed Moth"
 
 func generate_blurb(traits: Dictionary) -> String:
-	if traits.has("fuzzy"):
-		return "This moth spends long days flying higher than average. It is said that it wishes to be a bird."
+	if traits.has("glow") and traits.has("bright_palette") and traits.has("fuzzy"):
+		return "This luminous traveler bathes in moonlight and dreams of distant stars."
 	elif traits.has("torn_wing"):
 		return "Even damaged wings can carry great strength. This one proves it."
 	elif traits.has("bold_pattern"):

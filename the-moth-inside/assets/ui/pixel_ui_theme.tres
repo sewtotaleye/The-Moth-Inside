@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://2u73dho8wklv"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://2u73dho8wklv"]
 
 [ext_resource type="Texture2D" uid="uid://sm8v5hb5r62s" path="res://assets/ui/button.png" id="1_5i01l"]
+[ext_resource type="FontFile" uid="uid://cbcm24o571whw" path="res://assets/ui/WinkyRough-VariableFont_wght.ttf" id="1_lno6c"]
 [ext_resource type="FontFile" uid="uid://dd52jfoucqhvk" path="res://assets/ui/PressStart2P-Regular.ttf" id="2_e4qww"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e4qww"]
@@ -40,7 +41,8 @@ Button/colors/font_hover_color = Color(0.641306, 0.303498, 0, 1)
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
 Button/colors/icon_hover_color = Color(0.992157, 0.933333, 0.701961, 1)
 Button/colors/icon_pressed_color = Color(0.631373, 0.666667, 0.737255, 1)
-Button/font_sizes/font_size = 8
+Button/font_sizes/font_size = 18
+Button/fonts/font = ExtResource("1_lno6c")
 Button/icons/icon = ExtResource("1_5i01l")
 Button/styles/disabled = SubResource("StyleBoxTexture_e4qww")
 Button/styles/focus = SubResource("StyleBoxTexture_lno6c")
