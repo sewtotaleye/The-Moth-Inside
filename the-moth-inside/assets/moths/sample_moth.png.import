@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vb35ukqjnds"
-path="res://.godot/imported/lanternwing.png-ad0334f32c1873514cdd14595bdbc277.ctex"
+uid="uid://c426vhh75mkl5"
+path="res://.godot/imported/sample_moth.png-31d90982924c9a5b7e39b957f17c89e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/lanternwing.png"
-dest_files=["res://.godot/imported/lanternwing.png-ad0334f32c1873514cdd14595bdbc277.ctex"]
+source_file="res://assets/moths/sample_moth.png"
+dest_files=["res://.godot/imported/sample_moth.png-31d90982924c9a5b7e39b957f17c89e6.ctex"]
 
 [params]
 

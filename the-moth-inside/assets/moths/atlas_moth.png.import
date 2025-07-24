@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt4dcs8sikx5j"
-path="res://.godot/imported/cecropia_moth.png-7ac68d36d5fd117f97e09d35daadd6e7.ctex"
+uid="uid://bg1r7qbjyeyfe"
+path="res://.godot/imported/atlas_moth.png-bad1e9aa5e47fe04dd4c7c105975e91f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/cecropia_moth.png"
-dest_files=["res://.godot/imported/cecropia_moth.png-7ac68d36d5fd117f97e09d35daadd6e7.ctex"]
+source_file="res://assets/moths/atlas_moth.png"
+dest_files=["res://.godot/imported/atlas_moth.png-bad1e9aa5e47fe04dd4c7c105975e91f.ctex"]
 
 [params]
 

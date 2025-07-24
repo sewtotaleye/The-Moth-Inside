@@ -2,31 +2,31 @@
   {
 	"question": "When you are overwhelmed,you seek...",
 	"answers": [
-	  { "text": "More Lighting", "traits": ["glow", "bright_palette"] },
-	  { "text": "Focus", "traits": ["sharp_wings", "neutral_palette"] },
-	  { "text": "Silence", "traits": ["no_glow", "cool_palette"] },
+	  { "text": "More Lighting", "traits": ["glow", "bright_palette", "fuzzy", "bold_pattern", "chaotic_pattern", "red_tattoo", "smooth_edges"] },
+	  { "text": "Focus", "traits": ["sharp_wings", "neutral_palette", "smooth_edges"] },
+	  { "text": "Silence", "traits": ["frayed_edges", "cool_palette"] },
 	  { "text": "Connection", "traits": ["round_wings", "warm_palette"] }
 	]
   },
-{
+  {
 	"question": "What is success?",
 	"answers": [
-	  { "text": "Money", "traits": ["cool_palette"] },
-	  { "text": "Power", "traits": ["neutral_palette"] },
+	  { "text": "Money", "traits": ["cool_palette", "glow"] },
+	  { "text": "Power", "traits": ["neutral_palette", "chaotic_pattern"] },
 	  { "text": "Happiness", "traits": ["fuzzy", "warm_palette"] },
-	  { "text": "Success is subjective", "traits": ["round_wings", "bright_palette"] }
+	  { "text": "Success is subjective", "traits": ["round_wings", "bright_palette", "bold_pattern"] }
 	]
   },
-{
+  {
 	"question": "What grounds you?",
 	"answers": [
 	  { "text": "Routine", "traits": ["smooth_egdes"] },
-	  { "text": "Chaos", "traits": ["jagged_egdes"] },
-	  { "text": "Work", "traits": ["red_tattoo"] },
-	  { "text": "Nature", "traits": ["earth_palette", "floral"] }
+	  { "text": "Chaos", "traits": ["chaotic_pattern", "glow"] },
+	  { "text": "Work", "traits": ["red_tattoo", "neutral_palette"] },
+	  { "text": "Nature", "traits": ["earth_palette", "floral", "fuzzy"] }
 	]
   },
-{
+  {
 	"question": "Which one feels like you?",
 	"answers": [
 	  { "text": "A moth circling a porch light", "traits": ["glow", "chaotic_pattern"] },
@@ -35,21 +35,21 @@
 	  { "text": "A machine in the system", "traits": ["cool_palette", "torn_wing"] }
 	]
   },
-{
+  {
 	"question": "What kind of light draws you in?",
 	"answers": [
 	  { "text": "A soft candle", "traits": ["warm_palette"] },
-	  { "text": "A string of fairy lights", "traits": ["pastel_palette"] },
-	  { "text": "The moon at its brightest", "traits": ["cool_palette"] },
-	  { "text": "The golden hour", "traits": ["blush_palette"] }
+	  { "text": "A string of fairy lights", "traits": ["pastel_palette", "red_tattoo"] },
+	  { "text": "The moon at its brightest", "traits": ["cool_palette", "bold_pattern", "frayed_edges"] },
+	  { "text": "The golden hour", "traits": ["blush_palette", "smooth_edges"] }
 	]
   },
-{
+  {
 	"question": "What kind of beauty speaks to you?",
 	"answers": [
-	  { "text": "Worn-in, familiar things", "traits": ["soft_pattern", "frayed_edges"] },
+	  { "text": "Worn-in, familiar things", "traits": ["soft_pattern", "frayed_edges", "fuzzy"] },
 	  { "text": "Unexpected color combinations", "traits": ["bold_pattern", "bright_palette"] },
-	  { "text": "Perfect symmetry", "traits": ["cool_palette"] },
+	  { "text": "Perfect symmetry", "traits": ["cool_palette", "round_wings"] },
 	  { "text": "Little imperfections", "traits": ["neutral_palette", "torn_wing"] }
 	]
   }

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dejbn6fpfsxd"
-path="res://.godot/imported/deaths_head_hawkmoth.png-a6a7f9a59b094602deca05aaafe450ce.ctex"
+uid="uid://d37qe8cndrii4"
+path="res://.godot/imported/io_moth.png-731260afa9d7229ea43bebdca14e979f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/deaths_head_hawkmoth.png"
-dest_files=["res://.godot/imported/deaths_head_hawkmoth.png-a6a7f9a59b094602deca05aaafe450ce.ctex"]
+source_file="res://assets/moths/io_moth.png"
+dest_files=["res://.godot/imported/io_moth.png-731260afa9d7229ea43bebdca14e979f.ctex"]
 
 [params]
 

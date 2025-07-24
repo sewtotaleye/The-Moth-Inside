@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c426vhh75mkl5"
-path="res://.godot/imported/sample_moth.png-4e52f23697037df47e7fa7075003c672.ctex"
+uid="uid://bchhkuov5haw7"
+path="res://.godot/imported/white_witch_moth.png-b2d91049683306dbf998d699a5f203aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/sample_moth.png"
-dest_files=["res://.godot/imported/sample_moth.png-4e52f23697037df47e7fa7075003c672.ctex"]
+source_file="res://assets/moths/white_witch_moth.png"
+dest_files=["res://.godot/imported/white_witch_moth.png-b2d91049683306dbf998d699a5f203aa.ctex"]
 
 [params]
 

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://7yh52if30fe7" path="res://assets/backgrounds/result_background.png" id="2_6pwfk"]
 [ext_resource type="FontFile" uid="uid://cbcm24o571whw" path="res://assets/ui/WinkyRough-VariableFont_wght.ttf" id="3_7llif"]
 [ext_resource type="Theme" uid="uid://2u73dho8wklv" path="res://assets/ui/pixel_ui_theme.tres" id="4_7llif"]
-[ext_resource type="Texture2D" uid="uid://vb35ukqjnds" path="res://assets/moth_parts/lanternwing.png" id="4_8dhx7"]
+[ext_resource type="Texture2D" uid="uid://vb35ukqjnds" path="res://assets/moths/lanternwing.png" id="4_8dhx7"]
 
 [node name="Result" type="Control"]
 layout_mode = 3

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg1r7qbjyeyfe"
-path="res://.godot/imported/atlas_moth.png-02e465e2bb16b028f3b4998de80f989a.ctex"
+uid="uid://fbps81ehf0er"
+path="res://.godot/imported/unnamed_moth.png-9eafe5ed387b14c4094a92ddbba5ccec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/atlas_moth.png"
-dest_files=["res://.godot/imported/atlas_moth.png-02e465e2bb16b028f3b4998de80f989a.ctex"]
+source_file="res://assets/moths/unnamed_moth.png"
+dest_files=["res://.godot/imported/unnamed_moth.png-9eafe5ed387b14c4094a92ddbba5ccec.ctex"]
 
 [params]
 

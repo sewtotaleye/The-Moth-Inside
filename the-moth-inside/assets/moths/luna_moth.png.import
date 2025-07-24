@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fbps81ehf0er"
-path="res://.godot/imported/unnamed_moth.png-acb085a6135a6cdf2d6645b0ebb3cb29.ctex"
+uid="uid://gefrlw2blv1"
+path="res://.godot/imported/luna_moth.png-7b6ef75f06a8b5c39c2a9eef33472daf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/moth_parts/unnamed_moth.png"
-dest_files=["res://.godot/imported/unnamed_moth.png-acb085a6135a6cdf2d6645b0ebb3cb29.ctex"]
+source_file="res://assets/moths/luna_moth.png"
+dest_files=["res://.godot/imported/luna_moth.png-7b6ef75f06a8b5c39c2a9eef33472daf.ctex"]
 
 [params]
 
